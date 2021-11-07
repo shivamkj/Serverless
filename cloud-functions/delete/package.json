@@ -1,0 +1,7 @@
+{
+  "name": "cloud-functions",
+  "version": "1.0.0",
+  "dependencies": {
+    "@google-cloud/firestore": "^4.9.9"
+  }
+}

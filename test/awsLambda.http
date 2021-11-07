@@ -1,0 +1,32 @@
+@baseUrl = https://6kshkz7v59.execute-api.ap-south-1.amazonaws.com
+@id = b8ca2c80-7872-4a89-92a5-4ee4867a048d
+
+### 
+GET {{baseUrl}}/hello
+
+### Create new post
+POST {{baseUrl}}/post
+Content-Type: application/json
+
+{
+    "body": "Post Body 103866",
+    "title": "Post Title 199003"
+}
+
+### Get all post
+GET {{baseUrl}}/posts
+
+### Get post by id
+GET  {{baseUrl}}/post/{{id}}
+
+### Update post by id
+PUT  {{baseUrl}}/post/{{id}}
+Content-Type: application/json
+
+{
+    "body": "Post Body 104",
+    "title": "Post Title 105"
+}
+
+### Delete post
+DELETE  {{baseUrl}}/post/{{id}}

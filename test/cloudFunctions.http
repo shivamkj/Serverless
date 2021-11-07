@@ -1,0 +1,28 @@
+@baseUrl = https://asia-south1-theta-outrider-310911.cloudfunctions.net
+@id = 7898411988
+###
+POST {{baseUrl}}/crud-test-create
+Content-Type: application/json
+
+{
+    "id": "7898411932",
+    "name": "Test Name2",
+    "city": "Jaipur"
+}
+
+###
+GET  {{baseUrl}}/crud-test-read
+
+###
+PUT {{baseUrl}}/crud-test-update?id={{id}}
+Content-Type: application/json
+
+{
+    "name": "Random Name",
+    "city": "Ajmer"
+}
+###
+DELETE {{baseUrl}}/crud-test-delete?id={{id}}
+
+
+
